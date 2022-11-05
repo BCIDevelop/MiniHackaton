@@ -1,0 +1,17 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: url(../img/image-hero.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+main{
+    background: url(../img/image-hero.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    display: flex;
+    width: 80%;
+    margin:auto;
+}

@@ -1,0 +1,33 @@
+
+    header#banner nav{
+        display: flex;
+        justify-content: space-between;
+        justify-items: center;
+        padding: 2em  0em;
+        width: 100%;
+    }
+    header#banner nav .logo{
+        font-size: 2em;
+        color:white;
+    }
+    header#banner nav ul li{
+        list-style: none;
+    }
+    header#banner nav ul li a{
+        color:white;
+        text-decoration: none;
+        margin-left: 2em;
+        border-bottom: 1px solid transparent;
+    }
+    header#banner nav ul li a:hover{
+        border-bottom: 1px solid white;
+    }
+
+    header#banner .title h1{
+        border: solid 1px white;
+        color:white;
+        font-size: 3em;
+        margin: 10px;
+        width: 300px;
+        padding: 14px;
+    }
