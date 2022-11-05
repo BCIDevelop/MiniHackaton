@@ -1,8 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Alata&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@100;300&display=swap');
 
+#Hamburguesa{
+    display: none;
+    cursor: pointer;
+    font-size: 24px;
+    color: white;
+}
+#Hamburguesa i.fa-solid{
+    display: none;
+}
 header{
     padding-bottom: 8em;
+    transition: 0.5s ease-out;
 }
     header#banner nav{
         display: flex;
@@ -16,6 +26,10 @@ header{
         font-size: 2em;
         color:white;
         font-family: 'Alata', sans-serif;
+    }
+    header#banner nav ul{
+        display: flex;
+        flex-direction: row;    
     }
     header#banner nav ul li{
         list-style: none;

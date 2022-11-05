@@ -1,8 +1,103 @@
-@media only screen and (min-width: 1000px) {
+@media only screen and (max-width: 1000px) {
+    main{
+        background-size:  100% 500px;
+    }
+    header.active{
+        background: black;
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        z-index: 3;
+        top: 0px;
+        transition: 0.5s ease-out;
+    }
+    header.active nav #Hamburguesa{
+        color:white;
+        position: absolute;
+        right: 10%;
+        z-index: 4;
+        top: 6%;
+    }
+    header nav #Hamburguesa i.fa-bars{
+        display: block;
+    }
+    header.active nav #Hamburguesa i.fa-bars{
+        display: none;
+    }
+    header.active nav #Hamburguesa i.fa-close{
+        display: block;
+    }
+    header.active nav .logo{
+        margin-bottom: 2em;
+    }
+    header.active nav {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start !important;
+    }
+    header.active div.title{
+        display:none !important;
+    }
+    header#banner.active nav ul{
+        display: flex !important;
+        flex-direction: column;    
+    }
+    header#banner nav ul#items_hambur{
+        display: none;
+    }
+    header#banner.active nav ul li{
+        margin-bottom: 20px;
+    }
+    header#banner.active nav ul li a{
+        font-size: 2em;
+        margin-left: 0px;
+        font-family: 'Josefin Sans', sans-serif;
+    }
+    header#banner nav ul li a{
+        padding-bottom: 0px;
+    }
+    #Hamburguesa{
+        display: inline-block;
+    }
+    header,
     #ourtCreation{
-        color: red;
+        min-height: 400px;
+    }
+
+    header#banner .title h1{
+        font-size: 3em;
+        width: 100%;
     }
     #ourtCreation img{
-        width: 100px;
+        width: 100%;
+    }
+    .cartilla{
+        position:initial;
+        padding: 0px;
+        width: 100%;
+    }
+    .cartilla h2{
+        font-size: 1.5em;
+    }
+    .cartilla p{
+        font-size: 1em;
+    }
+};
+
+@media only screen and (max-width: 1400px) {
+    header#banner .title h1{
+        /* font-size: 3em; */
+        width: 100%;
+    }
+    .cartilla{
+        left: 40%;
+        top: 30%;
+    }
+    .cartilla h2{
+        font-size: 1.5em;
+    }
+    .cartilla p{
+        font-size: 1em;
     }
 };
