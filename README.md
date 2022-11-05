@@ -1,4 +1,4 @@
-<h2> Hi, We are group 6! <iframe src="https://giphy.com/embed/qgQUggAC3Pfv687qPC" width="480" height="360" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></h2>
+<h2> Hi, We are group 6! <img src="https://media.giphy.com/media/qgQUggAC3Pfv687qPC/giphy.gif" width="30"></h2>
 
 <p><em>FullStack Programmers at <a href="https://codigo.edu.pe/">CodiGO</a><img src="https://media.giphy.com/media/fYSnHlufseco8Fh93Z/giphy.gif" width="30">
 </em></p>
