@@ -5,6 +5,7 @@
         justify-items: center;
         padding: 3em  0em;
         width: 100%;
+        align-items: center;
     }
     header#banner nav .logo{
         font-size: 2em;
