@@ -13,7 +13,8 @@ main{
     margin:auto;
 }
 header,
-#ourtCreation{
+#ourtCreation,
+.container > div{
     box-sizing: border-box;
     padding: 0px 100px;
     padding-bottom: 20px;

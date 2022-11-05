@@ -53,8 +53,8 @@ img{
 .text{
     color: white;
     position: absolute;
-    top:70%;
-    left: 20%;
+    bottom: 5%;
+    left: 5%;
     font-size: 40px;
     
 }

@@ -1,6 +1,6 @@
 @media only screen and (max-width: 1000px) {
     main{
-        background-size:  100% 500px;
+        background-size:  100% 410px;
     }
     header.active{
         background: black;
@@ -83,6 +83,19 @@
     .cartilla p{
         font-size: 1em;
     }
+
+    .container-images{
+        grid-template-columns: 100% !important;
+        grid-template-rows: auto !important;
+    }
+    .container-images .fondo{
+        height: auto;
+        margin-bottom: 2em;
+    }
+    .container-images .fondo img{
+        height: auto;
+    }
+
 };
 
 @media only screen and (max-width: 1400px) {
@@ -91,7 +104,7 @@
         width: 100%;
     }
     .cartilla{
-        left: 40%;
+        left: 35%;
         top: 30%;
     }
     .cartilla h2{

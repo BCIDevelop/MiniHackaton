@@ -1,7 +1,6 @@
 const logIn= document.querySelector('.logIn')
 const logOut= document.querySelector('.logOut')
 function isLogedIn(){
-    console.log('entro')
     if(localStorage.getItem('email')){
         logIn.style.display='none'
         logOut.style.display='inline-block'
