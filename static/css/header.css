@@ -1,17 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Alata&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@100;300&display=swap');
 
+header{
+    padding-bottom: 8em;
+}
     header#banner nav{
         display: flex;
         justify-content: space-between;
         justify-items: center;
-        padding-bottom: 20px;
-        
+        padding: 3em  0em;
         width: 100%;
         align-items: center;
-        
     }
     header#banner nav .logo{
         font-size: 2em;
         color:white;
+        font-family: 'Alata', sans-serif;
     }
     header#banner nav ul li{
         list-style: none;
@@ -29,13 +33,13 @@
     }
 
     header#banner .title h1{
-        border: solid 1px white;
+        border: solid 4px white;
         color:white;
-        font-size: 3em;
+        font-size: 6em;
         margin: 10px;
-        margin-top: 30px;
-        width: 45%;
+        width: 700px;
         padding: 14px;
-        font-weight: 100;
-        text-align: center;
+        /* font-weight: 100; */
+        /* text-align: center; */
+        font-family: 'Josefin Sans', sans-serif;
     }
