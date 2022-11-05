@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Alata&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@100;300&display=swap');
 
     header#banner nav{
         display: flex;
@@ -27,6 +29,8 @@
     }
 
     header#banner .title h1{
+        font-family: 'Alata', sans-serif;
+
         border: solid 1px white;
         color:white;
         font-size: 3em;
@@ -34,5 +38,6 @@
         width: 45%;
         padding: 14px;
         font-weight: 100;
-        text-align: center;
+        /* text-align: center; */
+        font-family: 'Josefin Sans', sans-serif;
     }
