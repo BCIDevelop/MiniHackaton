@@ -8,7 +8,7 @@ main{
     background: url(../img/image-hero.jpg);
     background-repeat: no-repeat;
     /* background-size: center; */
-    background-size:  100% 400px;
+    background-size:  100% 600px;
     width: 100%;
     margin:auto;
 }
@@ -19,5 +19,5 @@ header,
     padding-bottom: 20px;
     width: 90%;
     margin:auto;
-    height: 400px;
+    min-height: 500px;
 }
