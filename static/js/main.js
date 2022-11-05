@@ -11,6 +11,9 @@ const article=document.getElementById('article')
 const message=document.getElementById('message')
 const logOut=document.getElementById('logOut')
 const inputText=document.querySelector('.text')
+const conteo =document.getElementById('conteo')
+const conteoRegresivo =document.getElementById('conteo-regresivo')
+
 
 circleContainer.onclick=function(){
     document.documentElement.classList.toggle('darkTheme')
@@ -32,7 +35,7 @@ circleContainer.onclick=function(){
     }
 }
 
-buttonSubmit.onclick=function(e){
+buttonSubmit.onclick=function async(e){
      e.preventDefault()
      inputs.forEach((element)=>{
         localStorage.setItem(element.name,element.value)
@@ -41,7 +44,18 @@ buttonSubmit.onclick=function(e){
      else username.textContent='Grupo 18'
      form.style.display='none'
      article.style.display='flex'
-
+     let contadorNumero=4
+     setInterval(()=>{
+        conteoRegresivo.innerHTML=contadorNumero
+        contadorNumero--
+     },1000)
+     
+      setTimeout(()=>{
+       
+        window.location.href = 'index.html';
+     },5000)
+       
+       
 }
 logOut.onclick=function(){
     localStorage.clear()

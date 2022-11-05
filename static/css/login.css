@@ -93,6 +93,9 @@ form{
     padding: 20px;
     background-color: var(--primary-color-1);
 }
+.conteo{
+    display: none;
+}
 .figure{
     width: 70%;
     background-image:linear-gradient(
