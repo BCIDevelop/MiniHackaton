@@ -27,12 +27,12 @@ logOut.onclick=(e)=>{
                 title: 'Listo!',
                 text: 'Cerraste seccion satisfactoriamente',
                 html: 'I will close in <b></b> milliseconds.',
-                timer: 3000,
+                timer: 4000,
                 didOpen: () => {
                     Swal.showLoading()
                     const b = Swal.getHtmlContainer().querySelector('b')
                     timerInterval = setInterval(() => {
-                      b.textContent = Swal.getTimerLeft()
+                      b.textContent = Math.floor(Swal.getTimerLeft()/1000)
                     }, 1000)
                   },
                 willClose:()=>{
