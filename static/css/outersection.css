@@ -1,0 +1,33 @@
+#ourtCreation{
+    width: 100vw;
+    height: 400px;
+    margin-top: 20px;
+ 
+}
+figure{
+    height: 100%;
+    position: relative;
+}
+#ourtCreation img{
+    box-sizing: border-box;
+    width: 60%;
+    height: 100%;   
+    padding: 50px;
+ 
+}
+.cartilla{
+    position: absolute;
+    height: 53%;
+    background-color: #fff;
+    top: 35%;
+    width: 40%;
+    left: 40%;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    box-sizing: border-box;
+    padding:40px;
+
+}

@@ -1,17 +1,16 @@
 *{
     margin: 0;
     padding: 0;
+   
 }
-body{
+
+header{
     background: url(../img/image-hero.jpg);
     background-repeat: no-repeat;
     background-size:cover;
-}
-main{
-    background: url(../img/image-hero.jpg);
-    background-repeat: no-repeat;
-    background-size:cover;
-    display: flex;
-    width: 80%;
+    box-sizing: border-box;
+    padding: 0px 100px;
+    padding-bottom: 20px;
+    width: 100%;
     margin:auto;
 }
