@@ -27,14 +27,15 @@ figure{
     /* height: 360px; */
 }
 .cartilla h2{
+    color: black;
     font-family: 'Josefin Sans', sans-serif;
-    font-size: 5em;
-    font-weight: 200;
+    font-size: 3em;
+    font-weight: 300;
+    margin-bottom:  0.8em;
 }
 .cartilla p{
-    /* font-family: 'Alata', sans-serif; */
     font-family: 'Josefin Sans', sans-serif;
-    color: #a7a7a7;
-    font-size: 1.6em;
-    /* text-align: left;: */
+    color: #534f4f;
+    font-size: 1.2em;
+    font-weight: 500;
 }
