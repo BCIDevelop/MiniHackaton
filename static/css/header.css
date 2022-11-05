@@ -4,9 +4,15 @@
 #Hamburguesa{
     display: none;
     cursor: pointer;
+    font-size: 24px;
+    color: white;
+}
+#Hamburguesa i.fa-solid{
+    display: none;
 }
 header{
     padding-bottom: 8em;
+    transition: 0.5s ease-out;
 }
     header#banner nav{
         display: flex;

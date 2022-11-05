@@ -9,13 +9,23 @@
         width: 100%;
         z-index: 3;
         top: 0px;
+        transition: 0.5s ease-out;
     }
     header.active nav #Hamburguesa{
         color:white;
         position: absolute;
         right: 10%;
         z-index: 4;
-        top: 11%;
+        top: 6%;
+    }
+    header nav #Hamburguesa i.fa-bars{
+        display: block;
+    }
+    header.active nav #Hamburguesa i.fa-bars{
+        display: none;
+    }
+    header.active nav #Hamburguesa i.fa-close{
+        display: block;
     }
     header.active nav .logo{
         margin-bottom: 2em;
