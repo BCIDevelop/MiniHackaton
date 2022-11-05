@@ -56,6 +56,7 @@ buttonSubmit.onclick=function async(e){
      },5000)   
 }
 logOut.onclick=function(){
+    
     localStorage.clear()
     form.style.display='flex'
     article.style.display='none'

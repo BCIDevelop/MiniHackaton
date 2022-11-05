@@ -10,9 +10,38 @@ function isLogedIn(){
     }
 }   
 logOut.onclick=(e)=>{
+    console.log('entro')
     e.preventDefault()
-    localStorage.clear()
-    isLogedIn()
-}
+    Swal.fire({
+        icon:'question',
+        title:'Estas seguro de cerrar sesion',
+        confirmButtonText:'Si, quiero',
+        showCancelButton:true,
+        denyButtonText:'No, seguir conectado'
+    }).then((result)=>{
+        if(result.isConfirmed===true){
+            localStorage.clear()
+            isLogedIn()
+            Swal.fire({
+                icon:'success',
+                title: 'Listo!',
+                text: 'Cerraste seccion satisfactoriamente',
+                html: 'I will close in <b></b> milliseconds.',
+                timer: 4000,
+                didOpen: () => {
+                    Swal.showLoading()
+                    const b = Swal.getHtmlContainer().querySelector('b')
+                    timerInterval = setInterval(() => {
+                      b.textContent = Math.floor(Swal.getTimerLeft()/1000)
+                    }, 1000)
+                  },
+                willClose:()=>{
+                    clearInterval(timerInterval)
+                }  
+            })
+        }
+    })
+   
+}   
 
 isLogedIn()
