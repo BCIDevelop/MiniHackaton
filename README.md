@@ -1,20 +1,14 @@
-const circleContainer=document.querySelector('.circle-container')
-const circle=document.querySelector('.circle')
-const text=document.getElementById('text-light')
-const figure=document.querySelector('.figure')
-let mode=0
-const buttonSubmit=document.getElementById('btn-submit')
-const form=document.getElementById('form1')
-const inputs= document.querySelectorAll('input')
-const username=document.getElementById('text-success')
-const article=document.getElementById('article')
-const message=document.getElementById('message')
-const logOut=document.getElementById('logOut')
-const inputText=document.querySelector('.text')
-const conteo =document.getElementById('conteo')
-const conteoRegresivo =document.getElementById('conteo-regresivo')
+<h2> Hi, We are group 6! <iframe src="https://giphy.com/embed/qgQUggAC3Pfv687qPC" width="480" height="360" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></h2>
 
+<p><em>FullStack Programmers at <a href="https://codigo.edu.pe/">CodiGO</a><img src="https://media.giphy.com/media/fYSnHlufseco8Fh93Z/giphy.gif" width="30">
+</em></p>
 
+###  A little more about me our codes funcionality  
+ <h2> This is how we did it using JavaScript</h2>
+
+###  Dark Mode main function  
+
+```javascript
 circleContainer.onclick=function(){
     document.documentElement.classList.toggle('darkTheme')
     circle.classList.toggle('circle-dark')
@@ -34,7 +28,10 @@ circleContainer.onclick=function(){
         mode=0
     }
 }
+```
+### Login session usig localStorage
 
+```javascript
 buttonSubmit.onclick=function async(e){
      e.preventDefault()
      inputs.forEach((element)=>{
@@ -55,9 +52,11 @@ buttonSubmit.onclick=function async(e){
         window.location.href = 'index.html';
      },5000)   
 }
-logOut.onclick=function(){
-    localStorage.clear()
-    form.style.display='flex'
-    article.style.display='none'
 
-}
+
+```
+<img src="https://media.giphy.com/media/LnQjpWaON8nhr21vNW/giphy.gif" width="60"> <em><b>Great Team Work! </b> so if you want to say <b>hi, We'll be happy here about you!</b> :)</em>
+
+---
+
+⭐️ From Group 6 G-18
