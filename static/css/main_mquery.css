@@ -1,3 +1,14 @@
+/* Dentro de las medidads responsive tenemos tres medidas estandar
+ 1200 a 1900 es tamano desktop 900 a 700 tablet 600 a 400 mobile o celular */
+
+ @media only screen and (min-width:375px) and (max-width:650px){
+    .container h2{
+       
+    }
+ }
+
+
+
 @media only screen and (max-width: 1000px) {
     main{
         background-size:  100% 410px;
