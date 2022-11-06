@@ -119,6 +119,7 @@ a {
 .row__footer{
     display: grid;
     grid-gap: 12px;
+    margin-top: 1em;
 }
 .content__footer{
    margin-left: 30rem;

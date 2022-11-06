@@ -24,4 +24,22 @@ window.addEventListener("resize", function() {
             element.setAttribute('src', './images/desktop/'+src);
         });
     }
-  })
+  });
+
+window.onload = () => {
+    if (window.matchMedia("(max-width: 1000px)").matches) {
+        //   console.log("Screen width is at least 500px")
+        const imgs = document.querySelectorAll(".fondo img");
+        imgs.forEach(element => {
+            let src = element.getAttribute('filename-src');
+            element.setAttribute('src', './images/mobile/'+src);
+        });
+    } else {
+        const imgs = document.querySelectorAll(".fondo img");
+        imgs.forEach(element => {
+            let src = element.getAttribute('filename-src');
+            element.setAttribute('src', './images/desktop/'+src);
+        });
+    }
+
+}
