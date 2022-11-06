@@ -136,3 +136,6 @@ a {
     border-bottom: 0.2rem solid #fff;
     text-decoration: none;
 }
+.nav__item{
+   font-weight: 700;
+}

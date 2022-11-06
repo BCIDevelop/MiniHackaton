@@ -10,9 +10,15 @@
 #Hamburguesa i.fa-solid{
     display: none;
 }
+
 header{
     padding-bottom: 8em;
     transition: 0.5s ease-out;
+    background-image: url(../img/image-hero.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    /* background-size: center; */
+    background-size:  cover;
 }
     header#banner nav{
         display: flex;
@@ -47,7 +53,7 @@ header{
     }
 
     header#banner .title h1{
-        border: solid 4px white;
+        border: solid 2.5px white;
         color:white;
         font-size: 6em;
         margin: 10px;

@@ -1,17 +1,91 @@
 /* Dentro de las medidads responsive tenemos tres medidas estandar
  1200 a 1900 es tamano desktop 900 a 700 tablet 600 a 400 mobile o celular */
 
- @media only screen and (min-width:375px) and (max-width:650px){
+ @media only screen and (min-width:375px) and (max-width:1000px){
     .container h2{
-       
+       font-size: 1.4em;
+    }
+   h1{
+    font-size: 2.2em !important;
+    width: 90% !important;
+    height: 190px; ;
+    margin: 0 !important;
+    line-height: 50px;
+    max-width: 400px;
+   }
+   header{
+    padding: 0 50px;
+    height: 100vh;
+   
+   }
+   #ourtCreation{
+     padding: 0 0;
+     margin-top: 50px;
+   }
+   .imagen1 img{
+     padding: 50px 30px !important;
+     height: 300px;
+   }
+   .title{
+    margin-top: 100px;
+   }
+   .cartilla{
+    padding: 0 40px !important;
+    text-align: center;
+   }
+   .cartilla p{
+    line-height: 25px;
+    font-weight: 600;
+   }
+   .container{
+    margin-top: 100px !important;
+   }
+   .container-position-reference{
+    position: relative;
+    padding: 0 20px !important;
+    
+   }
+   .caja-text{
+    position: absolute;
+    bottom: -6%;
+    left: 40%;
+   }
+   .container-sup{
+    display: block !important;
+   }
+   .fondo{
+     height: 150px !important;
+     margin-bottom: 0 !important;
+   }
+   .fondo img{
+     height: 100% !important;
+   }
+   .text{
+     font-size: 30px !important;
+     width: 160px;
+   }
+   .home__footer{
+        padding: 2em 1rem 4rem 1rem !important;
+        margin-top: 200px;
+   }
+   .nav__menu{
+    margin-top: 0 !important;
+    padding: 3rem 0 0 0 !important;
+   }
+
+ }
+ @media only screen and (min-width:650px) and (max-width:1200px){
+    #ourtCreation img{
+        height: 400px;
+        padding: 50px 0;
     }
  }
 
 
-
 @media only screen and (max-width: 1000px) {
-    main{
-        background-size:  100% 410px;
+   
+    header{
+        width: 100%;
     }
     header.active{
         background: black;

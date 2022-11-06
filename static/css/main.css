@@ -5,20 +5,18 @@
 }
 
 main{
-    background: url(../img/image-hero.jpg);
-    background-repeat: no-repeat;
-    /* background-size: center; */
-    background-size:  100% 600px;
+   
     width: 100%;
     margin:auto;
 }
+
 header,
 #ourtCreation,
 .container > div{
     box-sizing: border-box;
     padding: 0px 100px;
     padding-bottom: 20px;
-    width: 90%;
+    width: 100%;
     margin:auto;
     min-height: 500px;
 }
