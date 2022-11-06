@@ -1,0 +1,136 @@
+/*=============== GOOGLE FONTS ===============*/
+@import url('https://fonts.googleapis.com/css2?family=Alata&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+
+/*=============== VARIABLES CSS ===============*/
+:root {
+  --header-height: 3.5rem;
+
+  /*========== Colors ==========*/
+ 
+  --first-color: hsl(0, 0%, 100%);
+  --text-color: hsl(0, 0%, 0%);
+
+  /*========== Font and typography ==========*/
+
+  --body-font: 'Alata', sans-serif;
+  --header-font: 'Josefin Sans', sans-serif;
+  --biggest-font-size: 2.375rem;
+  --normal-font-size: .938rem;
+  --smaller-font-size: .75rem;
+}
+
+/* Responsive typography */
+@media screen and (min-width: 1024px) {
+  :root {
+    --biggest-font-size: 5rem;
+    --normal-font-size: 1rem;
+    --smaller-font-size: .813rem;
+  }
+}
+
+/*=============== BASE ===============*/
+
+
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  
+}
+
+@media screen and (max-width: 767px) {
+  .nav__menu {
+    position: fixed;
+    background-color: var(--first-color);
+    left: 0;
+    top: -100%;
+    width: 100%;
+    padding: 5rem 0 4rem;
+    border-radius: 0 0 1.5rem 1.5rem;
+    box-shadow: 0 2px 4px hsla(38, 4%, 15%, .15);
+    transition: .4s;
+  }
+}
+
+.nav__list {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  row-gap: 2rem;
+}
+
+.nav__link {
+  color: var(--first-color);
+}
+
+.nav__close {
+  position: absolute;
+  top: 1rem;
+  right: 1.5rem;
+  font-size: 1.5rem;
+  color: var(--text-color);
+  cursor: pointer;
+}
+
+
+
+
+
+
+
+@media screen and (min-width: 767px) {
+  .nav {
+    height: calc(var(--header-height) + 1.5rem);
+  }
+  .nav__toggle, 
+  .nav__close {
+    display: none;
+  }
+  .nav__list {
+    flex-direction: row;
+    column-gap: 3.5rem;
+  }
+}
+
+
+.home__footer{
+    padding: 2rem 10rem  4rem 10rem ;
+    background-color: var(--text-color);
+    display: flex;
+    gap: 2rem;
+}
+.brand_footer img{
+    width: 40%;
+}
+.social__footer{
+    position: relative;
+    margin-left: 38rem;
+    align-items: flex-end;
+    display: flex;
+    gap: 1rem;
+    cursor: pointer;
+
+}
+.row__footer{
+    display: grid;
+    grid-gap: 12px;
+}
+.content__footer{
+   margin-left: 30rem;
+}
+.all__footer{
+    color: hsl(0, 0%, 55%)
+}
+
+.nav__link:hover{
+    border-bottom: 0.2rem solid #fff;
+    text-decoration: none;
+}
+.icon__social:hover{
+    border-bottom: 0.2rem solid #fff;
+    text-decoration: none;
+}
