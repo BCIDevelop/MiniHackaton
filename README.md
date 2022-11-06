@@ -55,6 +55,96 @@ buttonSubmit.onclick=function async(e){
 
 
 ```
+### JS Challenges
+
+<p><em>JS Files at <a href="https://github.com/BCIDevelop/MiniHackaton/tree/main/static/js">JS Links</a></em></p>
+
+### First JS Challenge is it LeapYear
+
+```javascript
+    btnComprobar=document.getElementById('btn-comprobar')
+    input=document.getElementById('input')
+    result = document.getElementById('display')
+
+    function isLeapYear(value){
+   
+        if(value%100!==0 || value%400===0 || value/4) return true 
+        return false
+    }
+
+    btnComprobar.onsubmit=function(e){
+        e.preventDefualt()
+    
+        if(isLeapYear(input.value)) result.innerHTML='Si es año bisiesto' 
+        else result.innerHTML='No es año bisiesto' 
+    }
+```
+
+### Second JS Challenge Calculator
+
+```javascript
+    
+function calculadora(operacion,x,y){   
+    let resultado=0
+    const operando1=parseFloat(x)
+    const operando2=parseFloat(y)
+    if(!isNaN(operando1) ||!isNaN(operando2) ) return 'Por favor, revisa tus datos '
+        switch (operacion) {
+            case 'sumar':
+                resultado=operando1 + operando2
+                break;
+            case 'restar':
+                resultado=operando1 - operando2
+                break;
+            case 'multiplicacion':
+                resultado=operando1 * operando2
+                break;
+            case 'division':
+                if (operando2===0) resultado='No se deberia dividir entre 0'
+                resultado=operando1 / operando2
+                break;
+            case 'exponenciacion':
+                resultado=operando1 ^ operando2
+                break;
+            case 'residuo':
+                resultado=operando1 % operando2
+                break;
+            default:
+                resultado=-1
+                break;
+        }
+        return resultado
+}
+
+```
+
+### Third JS Challenge Calculate Total Ammount to pay
+
+```javascript
+    function requiredProducto(nombre,cantidad){
+    let resultado=0
+    const cantidadPedido=parseInt(cantidad)
+    if(!isNaN(cantidadPedido)) return 'Por favor revisa tus datos'
+        switch (nombre) {
+            case 'refresco':
+                resultado=cantidadPedido * 1
+                break;
+            case 'cerveza':
+                resultado=cantidadPedido * 2.5
+                break;
+            case 'papitas':
+                resultado=cantidadPedido * 5
+                break;
+         
+            default:
+                resultado=-1
+                break;
+        }
+
+        return `El precio total seria ${resultado} soles`
+}
+
+```
 <img src="https://media.giphy.com/media/LnQjpWaON8nhr21vNW/giphy.gif" width="60"> <em><b>Great Team Work! </b> so if you want to say <b>hi, We'll be happy here about you!</b> :)</em>
 
 ---
