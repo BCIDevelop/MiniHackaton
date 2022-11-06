@@ -26,7 +26,7 @@ logOut.onclick=(e)=>{
                 icon:'success',
                 title: 'Listo!',
                 text: 'Cerraste seccion satisfactoriamente',
-                html: 'I will close in <b></b> milliseconds.',
+                html: 'I will close in <b></b> segundos.',
                 timer: 4000,
                 didOpen: () => {
                     Swal.showLoading()
