@@ -64,14 +64,6 @@
      font-size: 30px !important;
      width: 160px;
    }
-   .home__footer{
-        padding: 2em 1rem 4rem 1rem !important;
-        margin-top: 200px;
-   }
-   .nav__menu{
-    margin-top: 0 !important;
-    padding: 3rem 0 0 0 !important;
-   }
 
  }
  @media only screen and (min-width:650px) and (max-width:1200px){
@@ -181,58 +173,29 @@
         height: auto;
     }
 
-
-    .home__footer,
-    #nav-menu .nav__item{
-        flex-direction: column !important;
-    }
-    .home__footer{
-        padding: 0rem;
-        /* background-color: var(--text-color); */
+    footer.home__footer{
         display: flex;
-        gap: 0rem;
         flex-direction: column;
     }
-    .brand_footer img{
-        width: 200px !important;
+    footer.home__footer div{
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
     }
-    .nav__menu{
-        gap: 0;
-        position: static !important;
-        background-color: black !important;
-        margin-top: 3em;
+    footer.home__footer .brand_footer .nav__menu{
+        margin-bottom: 0em;
     }
-    .row__footer{
-        display: flex !important;
+    footer.home__footer .brand_footer .nav__menu .nav__list{
         flex-direction: column !important;
     }
-    .nav__list{
-        flex-direction: column !important;
+    footer.home__footer .brand_footer .nav__menu .nav__list li{
+        margin-bottom: 1.5em;
+        font-size: 1.6em;
     }
-    .brand_footer{
-        text-align: center;
-    }
-    .home__footer{
-        padding-top: 4rem !important;
-    }
-    .row__footer{
-        flex-direction: column !important;
-    }
-    .content__footer{
-        margin-left: 0px !important; 
-        flex-direction: column !important;
-        text-align: center;
-    }
-    .social__footer{
-        position: relative;
-        margin-left: 0px !important;
-        align-items: center !important;
-        display: flex;
-        gap: 1rem;
-        cursor: pointer;
+    footer.home__footer .row__footer .social__footer {
+        flex-direction: initial;
         justify-content: center;
     }
-
 };
 
 @media only screen and (max-width: 1400px) {

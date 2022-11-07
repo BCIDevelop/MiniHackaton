@@ -12,7 +12,8 @@ main{
 
 header,
 #ourtCreation,
-.container > div{
+.container > div,
+footer{
     box-sizing: border-box;
     padding: 0px 100px;
     padding-bottom: 20px;
